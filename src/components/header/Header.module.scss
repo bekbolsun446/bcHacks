@@ -1,0 +1,49 @@
+// Header.module.scss
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+
+  .logo img {
+    width: 80px; /* Adjust according to your logo size */
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      margin-right: 20px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .login button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}

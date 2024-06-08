@@ -1,0 +1,26 @@
+// AboutUs.module.scss
+
+.aboutUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  .content {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 70%; /* Adjust the max-width as per your design */
+    height: auto;
+    border-radius: 20px;
+  }
+}

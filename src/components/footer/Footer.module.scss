@@ -1,0 +1,26 @@
+// Footer.module.scss
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px; /* Adjust according to your logo size */
+  border-radius: 50%;
+
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
