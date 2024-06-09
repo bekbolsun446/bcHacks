@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/bcHacks/static/css/main.cfcc8d31.css",
-    "main.js": "/bcHacks/static/js/main.5ac43451.js",
+    "main.css": "/bcHacks/static/css/main.2bf60735.css",
+    "main.js": "/bcHacks/static/js/main.7ed1dc50.js",
     "static/js/453.35174b0c.chunk.js": "/bcHacks/static/js/453.35174b0c.chunk.js",
     "static/media/aboutUs.png": "/bcHacks/static/media/aboutUs.d5e7caf7bdb71e462fd2.png",
     "static/media/contactUs.svg": "/bcHacks/static/media/contactUs.f7f274b07347b482db0735a71e78cc7c.svg",
     "static/media/logo.svg": "/bcHacks/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/bcHacks/index.html",
-    "main.cfcc8d31.css.map": "/bcHacks/static/css/main.cfcc8d31.css.map",
-    "main.5ac43451.js.map": "/bcHacks/static/js/main.5ac43451.js.map",
+    "main.2bf60735.css.map": "/bcHacks/static/css/main.2bf60735.css.map",
+    "main.7ed1dc50.js.map": "/bcHacks/static/js/main.7ed1dc50.js.map",
     "453.35174b0c.chunk.js.map": "/bcHacks/static/js/453.35174b0c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfcc8d31.css",
-    "static/js/main.5ac43451.js"
+    "static/css/main.2bf60735.css",
+    "static/js/main.7ed1dc50.js"
   ]
 }
