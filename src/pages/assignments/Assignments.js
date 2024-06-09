@@ -8,9 +8,9 @@ import ReturnRankedTasks  from './Program'
 const initialAssignments = [
     {
         name: "Assignment 1",
-        dueDate: "2024-06-15", // -> 15
+        dueDate: "2024-06-15", // -> 15 -9  = 6
         dueTime: "10:00 AM",  //-> 10
-        diffLevel: "Medium",
+        diffLevel: "Medium", // -> 2
         submitted: true
     },
     {
@@ -22,9 +22,9 @@ const initialAssignments = [
     },
     {
         name: "Assignment 2",
-        dueDate: "2024-06-18",
+        dueDate: "2024-06-25",
         dueTime: "2:30 PM",
-        diffLevel: "Hard",
+        diffLevel: "Easy",
         submitted: false
     },
    
@@ -50,6 +50,33 @@ const Assignments = () => {
        // setAssignments(ReturnRankedTasks(assignments));
     };
 
+
+    const difficultyLevels = {
+        "Easy": 1,
+        "Medium": 2,
+        "Hard": 3
+    };
+    
+    const calculateSortingScore = (assignment) => {
+        const now = new Date();
+        const dueDateTime = new Date(`${assignment.dueDate} ${assignment.dueTime}`);
+    
+        const hoursLeft = (dueDateTime - now) / (1000 * 60 * 60); // Convert milliseconds to hours
+        const daysLeft = (dueDateTime - now) / (1000 * 60 * 60 * 24); // Convert milliseconds to days
+    
+        const difficultyScore = difficultyLevels[assignment.diffLevel];
+    
+        // Avoid division by zero by adding a small value to daysLeft if it is zero
+        const sortingScore = difficultyScore * hoursLeft * (1 / (daysLeft || 0.0001));
+    
+        return sortingScore;
+    };
+    
+    assignments.sort((a, b) => {
+        const scoreA = calculateSortingScore(a);
+        const scoreB = calculateSortingScore(b);
+        return scoreB - scoreA; // Sort in descending order
+    });
 
     return (
         <div>
