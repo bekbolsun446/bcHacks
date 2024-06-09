@@ -10,6 +10,7 @@ const AssignmentModal = ({isOpen, onClose, onSave}) => {
         difficultyLevel: ''
     });
 
+    
     // Function to handle form field changes
     const handleChange = (event) => {
         const {name, value} = event.target;
@@ -24,12 +25,13 @@ const AssignmentModal = ({isOpen, onClose, onSave}) => {
         event.preventDefault();
         // Call the onSave function and pass the form data
         onSave(formData);
+        console.log(formData)
         // Clear the form fields after submission
         setFormData({
             name: '',
             dueDate: '',
             dueTime: '',
-            difficultyLevel: ''
+            diffLevel: ''
         });
         // Close the modal
         onClose();
@@ -56,7 +58,7 @@ const AssignmentModal = ({isOpen, onClose, onSave}) => {
                         </div>
                         {/* Due date of assignment */}
                         <div className={styles['form-group']}>
-                            <label htmlFor="dueDate">Due Date:</label>
+                            <label htmlFor="dueDate">Days Due:</label>
                             <input
                                 type="date"
                                 id="dueDate"
@@ -82,9 +84,9 @@ const AssignmentModal = ({isOpen, onClose, onSave}) => {
                         <div className={styles['form-group']}>
                             <label htmlFor="difficultyLevel">Difficulty Level:</label>
                             <select
-                                id="difficultyLevel"
-                                name="difficultyLevel"
-                                value={formData.difficultyLevel}
+                                id="diffLevel"
+                                name="diffLevel"
+                                value={formData.diffLevel}
                                 onChange={handleChange}
                                 required
                             >

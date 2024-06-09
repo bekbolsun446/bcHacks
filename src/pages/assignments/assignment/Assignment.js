@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Assignment.module.scss';
 
 const Assignment = ({assignment, index, onCheckboxChange}) => {
+    console.log(assignment.diffLevel);
     return (
         <div className={styles.assignment}>
             <div>
