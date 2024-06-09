@@ -1,0 +1,40 @@
+// Variables for consistent styling
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #f9f9f9;
+$border-radius: 5px;
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $primary-color;
+  color: white;
+  border-radius: $border-radius;
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0;
+  }
+
+  .add-assignment-btn {
+    background-color: $secondary-color;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: $border-radius;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+.assignment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
