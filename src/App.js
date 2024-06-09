@@ -12,6 +12,7 @@ function App() {
                 <Header/>
             </header>
             <Main></Main>
+            
             <footer>
                 <Footer></Footer>
             </footer>
