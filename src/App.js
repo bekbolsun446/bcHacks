@@ -4,6 +4,12 @@ import Main from "./pages/main/Main";
 import Header from "./components/header/Header";
 import React from "react";
 import Footer from "./components/footer/Footer";
+import AssignmentForm from "./pages/assignments/Assignments";
+
+
+function f() {
+
+}
 
 function App() {
     return (
@@ -11,7 +17,7 @@ function App() {
             <header>
                 <Header/>
             </header>
-            <Main></Main>
+            <AssignmentForm></AssignmentForm>
             <footer>
                 <Footer></Footer>
             </footer>
